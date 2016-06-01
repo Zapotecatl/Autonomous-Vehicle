@@ -1,0 +1,12 @@
+<welcome>
+	
+ <!-- Especificacion -->
+ <city n_h_streets = "5" m_v_streets= "5" d_s_block = "16"/>
+ <vehicles density_h = "0.3" density_v = "0.3" p_turn = "0.0" per_autonomous = "1.0" />
+ <traffic_lights method = "1" maxim_n = "40" maxim_m = "2" min_time = "10" max_time = "600" P = "85.0"/>
+ <sensors method = "1" distance_d = "10" distance_r = "5" distance_e = "4" precision = "1.0"/>
+ <experiments n_exp = "5" n_ticks = "5400" size_step = "0.02"/>
+   
+</welcome>
+
+

@@ -1,0 +1,148 @@
+﻿
+data <- read.csv("measuresflu.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("blue"), xlab = "Densidad", ylab="Flujo", ylim = range(c(0,0.3)))
+ 
+
+
+------------------------
+
+data <- read.csv("01measuresflu.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("green"), xlab = "Densidad", ylab="Flujo", ylim = range(c(0,0.3)))
+par(new = TRUE)
+data <- read.csv("02measuresflu.csv")
+Y2 <- data [, 2]
+matplot(X,Y2, type="o", pch=c(2), col=c("blue"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.3)))
+LE <- c("Auto-organizado - Humanos", "Auto-organizado - Autónomos")
+COL <-c("green", "blue")
+legend(0.2, 0.1, LE, col=COL , pch=c(1,2), box.lty=0)
+ 
+ 
+ 
+
+data <- read.csv("01measuresvel.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("green"), xlab = "Densidad", ylab="Velocidad", ylim = range(c(0,1.0)))
+par(new = TRUE)
+data <- read.csv("02measuresvel.csv")
+Y2 <- data [, 2]
+matplot(X,Y2, type="o", pch=c(2), col=c("blue"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,1.0)))
+LE <- c("Auto-organizado - Humanos", "Auto-organizado - Autónomos")
+COL <-c("green", "blue")
+legend(0.2, 3.0, LE, col=COL , pch=c(1,2), box.lty=0)
+ 
+
+----------------------------------
+
+
+
+data <- read.csv("measuresflu01.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("green"), xlab = "Density", ylab="Flow", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("measuresflu02.csv")
+Y2 <- data [, 2]
+matplot(X,Y2, type="o", pch=c(2), col=c("red"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("measuresflu03.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(3), col=c("blue"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("fluopt.csv")
+Y4 <- data [, 2]
+matplot(X,Y4, type="o", pch=c(4), col=c("black"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+LE <- c("Green Wave", "Self-organizing", "Self-organizing", "Optima")
+COL <-c("green", "red","blue", "black")
+legend(0.4, 0.15, LE, col=COL , pch=c(1,2,3,4), box.lty=0)
+ 
+
+
+data <- read.csv("measuresvel01.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("green"), xlab = "Density", ylab="Flow", ylim = range(c(0,1)))
+par(new = TRUE)
+data <- read.csv("measuresvel02.csv")
+Y2 <- data [, 2]
+matplot(X,Y2, type="o", pch=c(2), col=c("red"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,1)))
+par(new = TRUE)
+data <- read.csv("measuresvel03.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(3), col=c("blue"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,1)))
+par(new = TRUE)
+data <- read.csv("velopt.csv")
+Y4 <- data [, 2]
+matplot(X,Y4, type="o", pch=c(4), col=c("black"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,1)))
+LE <- c("Green Wave", "Self-organizing", "Self-organizing", "Optima")
+COL <-c("green", "red","blue", "black")
+legend(0.5, 0.8, LE, col=COL , pch=c(1,2,3,4), box.lty=0)
+ 
+
+
+data <- read.csv("10measuresflu.csv")
+X <- data[, 1]
+Y1 <- data [, 2]
+matplot(X,Y1, type="o", pch=c(1), col=c("red"), xlab = "Density", ylab="Flow", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("09measuresflu.csv")
+Y2 <- data [, 2]
+matplot(X,Y2, type="o", pch=c(2), col=c("green"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("08measuresflu.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(3), col=c("blue"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("07measuresflu.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(4), col=c("magenta"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("06measuresflu.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(5), col=c("orange"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+data <- read.csv("05measuresflu.csv")
+Y3 <- data [, 2]
+matplot(X,Y3, type="o", pch=c(6), col=c("gray"),axes=FALSE, xlab = "", ylab="", ylim = range(c(0,0.30)))
+par(new = TRUE)
+LE <- c("P = 100%", "P = 90%","P = 80%", "P = 70%", "P = 60%","P = 50%")
+COL <-c("red", "green","blue", "magenta","orange","gray" )
+legend(0.6, 0.15, LE, col=COL , pch=c(1,2,3,4,5,6), box.lty=0)
+ 
+
+----------------------------------------
+
+3D
+
+scatterplot3d(Densidad,Autonomos,Flujo, main="3D Scatterplot")
+
+data <- read.csv("02Automeasuresflu.csv")
+Densidad <- data[, 1]
+Autonomos <- data[, 2]
+Flujo <- data[, 3]
+library(scatterplot3d)
+library(rgl)
+library(plot3D)
+plot3d(Densidad,Autonomos,Flujo, col="blue", size=7)
+lines3d(Densidad,Autonomos,Flujo, col="green", size=5)
+
+
+
+data <- read.csv("02Automeasuresvel.csv")
+Densidad <- data[, 1]
+Autonomos <- data[, 2]
+Velocidad <- data[, 3]
+library(scatterplot3d)
+library(rgl)
+library(plot3D)
+plot3d(Densidad,Autonomos,Velocidad, col="red", size=7)
+lines3d(Densidad,Autonomos,Velocidad, col="green", size=5)
+
+ 
+ 
+ 
+ 
